@@ -6,7 +6,7 @@ import Link from "next/link"
 export const FirstSection = () => {
   return (
     <section
-      className="relative flex flex-col gap-y-4 bg-background w-full"
+      className="relative flex flex-col gap-y-4 w-full"
       id="first-heading"
     >
       <div className="w-full">
@@ -41,7 +41,7 @@ export const FirstSection = () => {
       </div>
       <motion.p
         className="text-p leading-relaxed"
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.2,
@@ -58,7 +58,7 @@ export const FirstSection = () => {
 
       <motion.div
         className="flex flex-wrap gap-4"
-        initial={{ opacity: 0.5, y: 100 }}
+        initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.4,
