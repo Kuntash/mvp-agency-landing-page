@@ -11,7 +11,7 @@ export const ThirdSection = () => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 1.6,
+          delay: 0.2,
           duration: 0.5,
           ease: "easeInOut",
         }}
@@ -25,7 +25,7 @@ export const ThirdSection = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 1.8,
+            delay: 0.4,
             duration: 0.5,
             ease: "easeInOut",
           }}
@@ -40,7 +40,7 @@ export const ThirdSection = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 2.0,
+            delay: 0.6,
             duration: 0.5,
             ease: "easeInOut",
           }}
@@ -54,7 +54,7 @@ export const ThirdSection = () => {
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 2.2,
+            delay: 0.8,
             duration: 0.5,
             ease: "easeInOut",
           }}
@@ -70,7 +70,7 @@ export const ThirdSection = () => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 2.4,
+          delay: 1.0,
           duration: 0.5,
           ease: "easeInOut",
         }}
