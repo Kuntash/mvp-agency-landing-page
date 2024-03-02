@@ -5,14 +5,11 @@ import Link from "next/link"
 
 export const FirstSection = () => {
   return (
-    <section
-      className="relative flex flex-col gap-y-4 w-full"
-      id="first-heading"
-    >
+    <header className="relative flex flex-col gap-y-4 w-full" id="first-header">
       <div className="w-full">
         <motion.div
           className="h-[4px] bg-primary"
-          initial={{ opacity: 0.5, width: 0 }}
+          initial={{ opacity: 0, width: 0 }}
           whileInView={{ opacity: 1, width: "90%" }}
           transition={{
             delay: 0.5,
@@ -23,7 +20,7 @@ export const FirstSection = () => {
 
         <motion.h2
           className="text-h2 font-bold tracking-tight leading-relaxed"
-          initial={{ opacity: 0.5, y: 100 }}
+          initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
             delay: 0,
@@ -66,10 +63,14 @@ export const FirstSection = () => {
           ease: "easeInOut",
         }}
       >
-        <Link href="https://tally.so/r/mR5Q6J" target="_blank">
+        <Link
+          href="https://tally.so/r/mR5Q6J"
+          target="_blank"
+          className="flex-1 sm:flex-none"
+        >
           <Button
             variant="default"
-            className="flex-1 sm:flex-none transition-all ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/50"
+            className="w-full transition-all ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/50"
           >
             Share your idea
           </Button>
@@ -78,15 +79,16 @@ export const FirstSection = () => {
         <Link
           href="https://cal.com/kunga-tashi/mvp-idea-discussion"
           target="_blank"
+          className="flex-1 sm:flex-none"
         >
           <Button
             variant="secondary"
-            className="flex-1 sm:flex-none transition-all ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/50"
+            className="w-full flex-1 sm:flex-none transition-all ease-in-out hover:-translate-y-1 hover:shadow-lg hover:shadow-secondary/50"
           >
             Book your consultation
           </Button>
         </Link>
       </motion.div>
-    </section>
+    </header>
   )
 }
