@@ -34,7 +34,7 @@ const SecondSection = () => {
           <span className="bg-clip-text bg-gradient-to-br from-primary to-accent text-transparent font-bold italic ">
             ANIMATIONS
           </span>
-          &nbsp;to drive user engagement. [Underline this feature]
+          &nbsp;to drive user engagement.
         </motion.p>
         <motion.p
           className="text-p leading-relaxed"
