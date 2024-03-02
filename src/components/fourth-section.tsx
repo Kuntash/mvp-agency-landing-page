@@ -29,7 +29,7 @@ export const FourthSection = () => {
           }}
         >
           Unlock the potential of your idea for just&nbsp;
-          <b>$500</b>
+          <b>$499</b>
           &nbsp;per MVP.
         </motion.p>
       </div>
